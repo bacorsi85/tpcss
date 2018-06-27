@@ -1,0 +1,267 @@
+#contenido{
+  display: block;
+  max-height: 100%;
+  max-width:900px;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+/*header*/
+header{
+  background-color: #5b7989;
+
+  border-radius:10px 10px 0 0;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  width: 100%;
+
+}
+
+
+div.headername{
+  float: left;
+  margin-top: 2%;
+  margin-left: 2%;
+  font-size:30px;
+
+}
+/*menu*/
+header nav {
+
+  float: right;
+  margin-top: 4%;
+  border:solid none;
+}
+
+header nav a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 2px 10px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+body{
+  background-color:  #02010a;
+  font-family:Dancing-Script;
+
+}
+
+
+#seccion-principal {
+  display: block;
+background-color: #82c3a6;
+max-height: 90%;
+max-width: 100%;
+text-align: center;
+
+
+}
+
+.caja1 {
+ border: 1px solid black;
+  width: 90%;
+  max-width: 100%;
+  border: none;
+  text-align:center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 10px;
+  color: black;
+  background-color:none;
+  margin: auto;
+  order:1
+}
+
+
+#seccion-secundaria {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+max-height: 90%;
+max-width: 100%;
+margin: auto;
+background-color: #d5c75f;
+height:auto;
+max-width: 100%;
+}
+
+
+.caja2 {
+  border: 1px solid none;;
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  color: black;
+  text-decoration: underline;
+  text-shadow: #82c3a6;
+  order: 2;
+}
+
+.caja3{
+  border: 1px solid none;;
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  color: black;
+  text-decoration: underline;
+  text-shadow: #82c3a6;
+  order: 3;
+
+
+
+}
+img[title="secundaria1"]{
+  border: 2px solid black;
+  box-shadow: 2px 2px #82c3a6;
+
+}
+
+img[title="retrato"]{
+  border: 2px solid black;
+  box-shadow: 2px 2px #82c3a6;
+
+}
+/*footer*/
+footer{
+  background-color:#C6d5c5;
+  height: 30%;
+  max-width: 100%;
+  border-radius:0px 0px 10px 10px;
+  color: black;
+  width: 100%;
+}
+#footer{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+  border: solid none;
+  margin: auto;
+  font-size: 15px;
+  text-align: center;
+  clear: both;
+}
+#footer h1{
+  font-size: 20px;
+}
+
+
+.contacto{
+  border: solid none;
+  margin:auto;
+  text-align: left;
+  margin-top: 1%;
+}
+.terminos{
+  border: solid none;
+  margin:auto;
+  text-align: left;
+  margin-top: 1%;
+
+}
+.redes{
+  border: solid none;
+  text-align: left;
+  margin:auto;
+  margin-top: 1%;
+  max-width:20%;
+
+}
+.derechos{
+  border: solid none;
+  margin:auto;
+  text-align: left;
+  margin-top: 1%;
+  }
+  .icon{
+    width: 2%;
+  }
+ p img{
+  text-align: center;
+}
+/*media queries*/
+@media (max-width: 900px) {
+  #contenido {
+		width:100%;
+	}
+  #seccion-principal {
+    display: flex;
+    flex-direction: column;
+  }
+  #seccion-secundaria {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  #footer{
+    display: inline-block;
+    margin-left: 10%;
+  }
+
+  .redes{
+    border: solid none;
+    text-align: left;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom:1%;
+  }
+  .caja2 {
+   border: 1px solid black;
+    width: 90%;
+    max-width: 100%;
+    border: none;
+    text-align:center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 10px;
+    color: black;
+    background-color:none;
+    margin: auto;
+    order:3
+  }
+  .caja3 {
+   border: 1px solid black;
+    width: 90%;
+    max-width: 100%;
+    border: none;
+    text-align:center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 10px;
+    color: black;
+    background-color:none;
+    margin: auto;
+    order:2
+
+  }
+  header nav {
+
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-right: 20%;
+  }
+
+}
+
+/*
+Cabecera esta sección debe contener la información del sitio, toma en cuenta lo siguiente:
+Establece el fondo de color #5b7989.
+Agrega el Nombre del sitio "Comenzando con la fotografía" ubicado al lado izquierdo, en blanco la letra debe tener una sombra de 2px de color .
+Aplica bordes redondeados en las esquinas superiores a 10px.
+Desarrolla un menú, para la versión desktop, a la derecha con enlaceas a tres páginas: Inicio, Paisajes, Retratos. La página actual debe tener estilo sin subrayado
