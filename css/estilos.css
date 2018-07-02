@@ -24,7 +24,7 @@ div.headername{
   float: left;
   margin-top: 2%;
   margin-left: 2%;
-  font-size:30px;
+  font-size:50px;
 
 }
 /*menu*/
@@ -40,6 +40,7 @@ header nav a{
     display: inline-block;
     text-decoration: none;
     padding: 2px 10px;
+    font-size: 25px;
 }
 
 .clearfix {
@@ -49,7 +50,8 @@ header nav a{
 
 body{
   background-color:  #02010a;
-  font-family:Dancing-Script;
+  font-family: Dancing script;
+
 
 }
 
@@ -121,15 +123,22 @@ max-width: 100%;
 
 
 }
-img[title="secundaria1"]{
+img[title="secundaria1"]:hover{
   border: 2px solid black;
   box-shadow: 2px 2px #82c3a6;
-
+  transform: rotate(10deg);
+  transition: all 0.3s ease-in-out 0.3s;
 }
 
-img[title="retrato"]{
+
+
+img[title="retrato"]:hover{
   border: 2px solid black;
   box-shadow: 2px 2px #82c3a6;
+  transform:translate(-10%);transition: ease-in-out 0.3s ease-in-out 0.4s;
+  transform:translate(10%);transition: all 0.3s ease-in-out 0.3s;
+  transition: transform .4s;
+
 
 }
 /*footer*/
@@ -148,7 +157,7 @@ footer{
   max-width: 100%;
   border: solid none;
   margin: auto;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   clear: both;
 }
@@ -183,13 +192,116 @@ footer{
   margin:auto;
   text-align: left;
   margin-top: 1%;
-  }
-  .icon{
-    width: 2%;
-  }
- p img{
+}
+.icon{
+  width: 2%;
+}
+p img{
   text-align: center;
 }
+
+/*paisajes.html*/
+#row{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1%;
+  background-color: #d5c75f;
+  max-width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-left:;
+}
+.cajas{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5%;
+  background-color: #d5c75f;
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+  height: 200%;
+}
+
+.caja21{
+  border: 1px solid none;
+    margin: auto;
+  width: 30%;
+  height: 250px;
+  padding: 1px;
+  color: black;
+  text-shadow: #82c3a6;
+  order: 1;
+  text-align: center;
+  margin-bottom: 5%;
+   filter: blur(10px) grayscale(20%);
+}
+.caja22{
+  margin: auto;
+  margin-bottom: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border: 1px solid none;
+  width: 30%;
+  height: 250px;
+  padding: 1px;
+  color: black;
+  text-shadow: #82c3a6;
+  filter: grayscale(100%);
+  order: 2;
+}
+.caja23{
+  margin: auto;
+  margin-bottom: 5%;
+  border: 1px solid none;
+  width: 30%;
+  height: 250px;
+  padding: 1px;
+  color: black;
+  text-shadow: #82c3a6;
+  filter: sepia(90%);
+  order: 3;
+}
+.caja24{
+  margin: auto;
+  border: 1px solid none;
+  width: 30%;
+  height: 250px;
+  padding: 1px;
+  color: black;
+  text-shadow: #82c3a6;
+  filter: grayscale(100%);
+  order: 4;
+}
+.caja25{
+  margin: auto;
+  margin-left: 2%;
+  margin-right: 2%;
+  border: 1px solid none;
+  width: 30%;
+height: 250px;
+  padding: 1px;
+  color: black;
+  text-shadow: #82c3a6;
+  order: 5;
+}
+.caja26{
+  margin: auto;
+  border: 1px solid none;
+  width: 30%;
+  height: 250px;
+  padding: 1px;
+  color: black;
+  text-shadow: #82c3a6;
+  filter: grayscale(100%);
+  order: 6;
+  transform:scale(60%);
+
+}
+
+
+
 /*media queries*/
 @media (max-width: 900px) {
   #contenido {
@@ -200,6 +312,11 @@ footer{
     flex-direction: column;
   }
   #seccion-secundaria {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .cajas {
     display: block;
     max-width: 100%;
     height: auto;
@@ -249,6 +366,79 @@ footer{
     order:2
 
   }
+  .caja21{
+    border: 1px solid none;
+      margin: auto;
+      margin-bottom: 10%;
+    width: 100%;
+    padding: 1px;
+    color: black;
+    text-shadow: #82c3a6;
+    order: 1;
+    text-align: center;
+     filter: blur(10px) grayscale(20%);
+  }
+  .caja22{
+    margin: auto;
+    margin-bottom: 10%;
+    border: 1px solid none;
+    width: 100%;
+    height: 250px;
+    padding: 1px;
+    color: black;
+    text-shadow: #82c3a6;
+    filter: grayscale(100%);
+    order: 2;
+  }
+  .caja23{
+    margin: auto;
+    margin-bottom: 10%;
+    border: 1px solid none;
+    width: 100%;
+    height: 250px;
+    padding: 1px;
+    color: black;
+    text-shadow: #82c3a6;
+    filter: sepia(90%);
+    order: 3;
+  }
+  .caja24{
+    margin: auto;
+    margin-bottom: 10%;
+    border: 1px solid none;
+    width: 100%;
+    height: 250px;
+    padding: 1px;
+    color: black;
+    text-shadow: #82c3a6;
+    filter: grayscale(100%);
+    order: 4;
+  }
+  .caja25{
+    margin: auto;
+    margin-bottom: 10%;
+    border: 1px solid none;
+    width: 100%;
+  height: 250px;
+    padding: 1px;
+    color: black;
+    text-shadow: #82c3a6;
+    order: 5;
+  }
+  .caja26{
+    margin: auto;
+    margin-bottom: 10%;
+    border: 1px solid none;
+    width: 100%;
+    height: 250px;
+    padding: 1px;
+    color: black;
+    text-shadow: #82c3a6;
+    filter: grayscale(100%);
+    order: 6;
+
+  }
+
   header nav {
 
     text-align: center;
